@@ -6,7 +6,7 @@ Aquesta pàgina descriu la pràctica de GEI-LP (edició 2022-2023 Q2). La vostra
 
 ## Alonzo Church
 
-Alonzo Church (1903-1995) fou un matemàtic, lògic, informàtic i filosòf conegut entre altres coses per la tesi Church-Turing i el λ-càlcul. Està considerat un dels fundadors de la informàtica.
+Alonzo Church (1903-1995) fou un matemàtic, lògic, informàtic i filòsof conegut entre altres coses per la tesi Church-Turing i el λ-càlcul. Està considerat un dels fundadors de la informàtica.
 
 ## Tasca 1: la gramàtica
 
@@ -43,7 +43,7 @@ Les abstraccions poden tenir més d'un paràmetre. Així les expressions següen
 
 Les variables es codifiquen amb una única lletra minúscula per motius estètics. Així, el terme `xy`correspon a l'aplicació del terme `x`sobre el terme `y`.
 
-Això fa que només poguem tenir 26 variables en el nostre entorn per motius simplement estètics. En un intèrpret més gran podriem acceptar noms de variables usuals en els llenguatges de programació per no tenir aquesta limitació.
+Això fa que només puguem tenir 26 variables en el nostre entorn per motius simplement estètics. En un intèrpret més gran podríem acceptar noms de variables usuals en els llenguatges de programació per no tenir aquesta limitació.
 
 ## Tasca 2: el visitador
 
@@ -71,7 +71,7 @@ Arbre:
 
 On el `?`correspon al prompt per demanar l'entrada i el que hi ha a continuació seria l'arbre parentitzat. 
 
-Per representar l'arbre semàntic heu d'utilitzar els tipus algebraïcs de python mitjançant el `dataclass` de la llibreria `dataclasses`. A continuació teniu un exemple del seu funcionament:
+Per representar l'arbre semàntic heu d'utilitzar els tipus algebraics de python mitjançant el `dataclass` de la llibreria `dataclasses`. A continuació teniu un exemple del seu funcionament:
 
 ```python3
 from __future__ import annotations
@@ -112,7 +112,7 @@ A continuació es mostren alguns exemples comentats que podeu utilitzar com a jo
 
 #### Exemple 1
 
-En aquest exemple s'ha d'aplicar una β-reducció sustituïnt les `y` del terme esquerre pel terme dret `ab`:
+En aquest exemple s'ha d'aplicar una β-reducció substituint les `y` del terme esquerre pel terme dret `ab`:
 
 ```
 ? (λy.x(yz))(ab)
@@ -142,7 +142,7 @@ Resultat:
 
 #### Exemple 3
 
-Aquest exemple serveix per veure si esteu aplicant l'ordre normal. Si apliquèssiu l'ordre de reducció aplicatiu entra en una sèrie de crides infinita.
+Aquest exemple serveix per veure si esteu aplicant l'ordre normal. Si apliquéssiu l'ordre de reducció aplicatiu entra en una sèrie de crides infinita.
 
 ```
 ? (λx.a)((λy.yy)(λz.zz))
@@ -229,7 +229,7 @@ En aquesta tasca es demana que modifiqueu la gramàtica i l'script per tal de po
 
 - Guardar una taula de macros definides
 
-- Quan aparegui una macro en un terme, sustituïr-lo pel seu terme λ-càlcul equivalent
+- Quan aparegui una macro en un terme, substituïr-lo pel seu terme λ-càlcul equivalent
 
 Els noms de les macros han de començar per una lletra majúscula i poden contenir majúscules i xifres. La forma de definir les macros serà mitjançant els caràcters `≡` o `=`amb notació infixa.
 
@@ -368,7 +368,7 @@ que, al descomprimir-se generi:
 
 - Res més. De debò, res més. Tampoc directoris. Ni subdirectoris. Ni `.git`s, ni `.MACOS_XXX`... Res més, collons!
 
-Els vostres fitxers de codi en Python han de seguir les regles d’estı́l PEP8, tot i que podeu oblidar les restriccions sobre la llargada màxima de les lı́nies. Podeu utilitzar els paquets `pep8` o `autopep8` o http://pep8online.com/ per assegurar-vos que seguiu aquestes regles d’estı́l. L’ús de tabuladors en el codi queda prohibit (zero directe). Els vostres programes en AChurch han de seguir l'estil exposat en aquest document.
+Els vostres fitxers de codi en Python han de seguir les regles d'estil PEP8, tot i que podeu oblidar les restriccions sobre la llargada màxima de les lı́nies. Podeu utilitzar els paquets `pep8` o `autopep8` o http://pep8online.com/ per assegurar-vos que seguiu aquestes regles d'estil. L’ús de tabuladors en el codi queda prohibit (zero directe). Els vostres programes en AChurch han de seguir l'estil exposat en aquest document.
 
 El termini de lliurament és el **dimecres 8 de juny a les 13:00**.
 
