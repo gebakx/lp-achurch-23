@@ -293,11 +293,9 @@ Resultat:
 
 Com podeu veure, la nostra implementació mostra totes les macros definides en el moment en que definim una nova.
 
-
-
 ## Tasca 5: macros amb notació infixa
 
-En aquesta última tasca heu de permetre la definició de macros amb notació infixa. En aquests cas els noms seran símbols no alfabètics i la seva implementació serà similar a les macros amb notació prefixa. Veieu l'exemple següent:
+En aquesta tasca heu de permetre la definició de macros amb notació infixa. En aquests cas els noms seran símbols no alfabètics i la seva implementació serà similar a les macros amb notació prefixa. Veieu l'exemple següent:
 
 ```
 ? N2≡λs.λz.s(s(z))
@@ -328,7 +326,23 @@ Resultat:
 (λx.(λy.(x(x(x(x(xy)))))))
 ```
 
+## Tasca 6: AChurch a Telegram
 
+Feu que l'intèrpret *AChurch* funcioni a *Telegram* via la llibreria `python-telegram-bot`.
+
+El bot ha de tenir almenys les comandes: `start`, `author`, `help` i `macros`. A la figura següent teniu un exemple de les tres primeres, l'última es mostrarà en un proper exemple.
+
+![comandes](telegram.png)
+
+La següent en mostra dos exemples d'avaluacions d'expressions:
+
+![avaluacions](telegram2.png)
+
+I la següent un d'ús de macros i la comanda `macros`:
+
+![avaluacions](telegram3.png)
+
+## Tasca 7: representació gràfica dels arbres
 
 ## Llibreries
 
@@ -387,3 +401,5 @@ Per evitar problemes de còpies, no pengeu el vostre projecte en repositoris pú
 - Lambda-Calculus Evaluator: https://www.cl.cam.ac.uk/~rmk35/lambda_calculus/lambda_calculus.html
 
 - Lambda Calculus Interpreter: https://jacksongl.github.io/files/demo/lambda/index.htm
+
+- python-telegram-bot: https://docs.python-telegram-bot.org/en/stable/
