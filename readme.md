@@ -330,6 +330,12 @@ Resultat:
 
 Feu que l'intèrpret *AChurch* funcioni a *Telegram* via la llibreria `python-telegram-bot`.
 
+Haureu d'instal·lar-la fent:
+
+```
+pip install python-telegram-bot
+```
+
 El bot ha de tenir almenys les comandes: `start`, `author`, `help` i `macros`. A la figura següent teniu un exemple de les tres primeres, l'última es mostrarà en un proper exemple.
 
 ![comandes](telegram.png)
@@ -340,9 +346,30 @@ La següent en mostra dos exemples d'avaluacions d'expressions:
 
 I la següent un d'ús de macros i la comanda `macros`:
 
-![avaluacions](telegram3.png)
+![macros](telegram3.png)
+
+Fixeu-vos en que la macro `macros`mostra un llistat de totes les macros que hi ha definit al sistema.
+
+El bot que hem fet nosaltres utilitza la versió 20.1 del `python-telegram-bot`.
 
 ## Tasca 7: representació gràfica dels arbres
+
+En aquesta última tasca heu de fer que es representin gràficament els arbres semàntics, amb la llibreria `pydot`.
+
+Necessitareu instal·lar el següent:
+
+```
+pip install pydot
+sudo apt install graphviz
+```
+
+La figura següent mostra el que s'espera que obtingueu:
+
+![arbres](telegram4.png)
+
+Fixeu-vos en que `@` representa la composició i les linies discontinues variables lligades.
+
+Per mostrar les imatges hem generat arxius `png`amb el `pydot` i les hem enviat com si fossin `photos`.
 
 ## Llibreries
 
@@ -403,3 +430,5 @@ Per evitar problemes de còpies, no pengeu el vostre projecte en repositoris pú
 - Lambda Calculus Interpreter: https://jacksongl.github.io/files/demo/lambda/index.htm
 
 - python-telegram-bot: https://docs.python-telegram-bot.org/en/stable/
+
+- pydot: https://github.com/pydot/pydot
