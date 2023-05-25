@@ -313,9 +313,9 @@ Arbre:
 β-reducció:
 ((λp.(λq.(λx.(λy.((px)((qx)y))))))(λs.(λz.(s(sz))))) → (λq.(λx.(λy.(((λs.(λz.(s(sz))))x)((qx)y)))))
 β-reducció:
-((λs.(λz.(s(sz))))x) → (λz.(x(xz)))
+((λq.(λx.(λy.(((λs.(λz.(s(sz))))x)((qx)y)))))(λs.(λz.(s(s(sz)))))) → (λx.(λy.(((λs.(λz.(s(sz))))x)(((λs.(λz.(s(s(sz)))))x)y))))
 β-reducció:
-((λq.(λx.(λy.((λz.(x(xz)))((qx)y)))))(λs.(λz.(s(s(sz)))))) → (λx.(λy.((λz.(x(xz)))(((λs.(λz.(s(s(sz)))))x)y))))
+((λs.(λz.(s(sz))))x) → (λz.(x(xz)))
 β-reducció:
 ((λz.(x(xz)))(((λs.(λz.(s(s(sz)))))x)y)) → (x(x(((λs.(λz.(s(s(sz)))))x)y)))
 β-reducció:
